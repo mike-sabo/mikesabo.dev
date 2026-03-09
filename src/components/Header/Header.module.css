@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.headerLogo {
+    width: auto;
+    max-width: 100%;
+    border-radius: 50%;
+    height: 4.6875rem;
+}
+
+.headerText {
+    display: none;
+    font-family: 'Press Start 2P', monospace;
+}
+
+@media (min-width: 31.25rem) {
+    .headerText {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 48rem) {
+    .headerLogo {
+        height: 6.25rem;
+    }
+}
