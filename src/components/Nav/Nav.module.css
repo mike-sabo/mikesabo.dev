@@ -1,0 +1,207 @@
+.nav {
+  margin-left: auto;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #213547;
+  border-radius: 2px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Sidenav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.sidenavOpen {
+  width: 280px;
+}
+
+/* Header row with Menu title and close button */
+.sidenavHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  flex-shrink: 0;
+}
+
+.menuTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #213547;
+  white-space: nowrap;
+}
+
+.closebtn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #213547;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.closebtn:hover {
+  color: #000;
+}
+
+/* Nav links */
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  flex-grow: 1;
+}
+
+.navLinks a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #213547;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.navLinks a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Social section */
+.socialSection {
+  padding: 20px 24px;
+  border-top: 1px solid #e5e5e5;
+  flex-shrink: 0;
+}
+
+.socialTitle {
+  font-size: 13px;
+  color: #888;
+  display: block;
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 12px;
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  color: #213547;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.socialIcons a:hover {
+  background-color: #f0f0f0;
+  border-color: #bbb;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .bar {
+    background-color: #fff;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .sidenav {
+    background-color: #1a1a1a;
+    box-shadow: -2px 0 12px rgba(0, 0, 0, 0.4);
+  }
+
+  .menuTitle {
+    color: #e5e5e5;
+  }
+
+  .closebtn {
+    color: #e5e5e5;
+  }
+
+  .closebtn:hover {
+    color: #fff;
+  }
+
+  .navLinks a {
+    color: #e5e5e5;
+  }
+
+  .navLinks a:hover {
+    background-color: #2a2a2a;
+  }
+
+  .socialSection {
+    border-top-color: #333;
+  }
+
+  .socialTitle {
+    color: #888;
+  }
+
+  .socialIcons a {
+    color: #e5e5e5;
+    border-color: #444;
+  }
+
+  .socialIcons a:hover {
+    background-color: #2a2a2a;
+    border-color: #666;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .navLinks a {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+}
