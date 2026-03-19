@@ -1,0 +1,119 @@
+.experience {
+  padding: 4rem 1.5rem;
+  background-color: #f4f5fb;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #213547;
+  margin: 0 0 2rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.jobTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #213547;
+  margin: 0 0 0.2rem;
+}
+
+.company {
+  font-size: 0.9rem;
+  color: #3b5bdb;
+  font-weight: 500;
+}
+
+.period {
+  font-size: 0.85rem;
+  color: #888;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.bullets {
+  padding-left: 1.25rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.bullets li {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.education {
+  margin-top: 3rem;
+}
+
+.educationCard {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .experience {
+    background-color: #111111;
+  }
+
+  .heading {
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .card {
+    background-color: #1e1e1e;
+    border-color: #2e2e2e;
+  }
+
+  .jobTitle {
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  .company {
+    color: #818cf8;
+  }
+
+  .period {
+    color: #666;
+  }
+
+  .bullets li {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .educationCard {
+    background-color: #161616;
+    border-color: #2a2a2a;
+  }
+}

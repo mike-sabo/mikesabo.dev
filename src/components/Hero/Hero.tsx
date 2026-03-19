@@ -9,7 +9,7 @@ interface HeroProps {
 
 function Hero({ name, avatarSrc, greeting = "Hi, I'm", taglines = [] }: HeroProps) {
   return (
-    <section className={styles.hero}>
+    <section id="home" className={styles.hero}>
       <img
         className={styles.avatar}
         src={avatarSrc}

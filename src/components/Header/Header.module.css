@@ -23,6 +23,8 @@
 .headerText {
     font-family: 'Press Start 2P', monospace;
     font-size: 0.85rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 @media (min-width: 48rem) {

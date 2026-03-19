@@ -1,47 +1,70 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GoBriefcase, GoMail, GoHome } from "react-icons/go";
+import styles from "./Nav.module.css";
 
-
-import { useState } from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import { GoHome, GoPerson, GoBriefcase, GoCode, GoMail } from 'react-icons/go'
-import styles from './Nav.module.css'
+const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+  `${styles.navLinkItem}${isActive ? ` ${styles.navLinkActive}` : ""}`;
 
 function Nav() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const close = () => setIsOpen(false);
 
   return (
     <nav className={styles.nav}>
-      <button
-        className={styles.hamburger}
-        onClick={() => setIsOpen(true)}
-        aria-label="Open menu"
-      >
+      {/* ── Desktop nav (≥768px) ───────────────────────── */}
+      <div className={styles.desktopNav}>
+        <div className={styles.desktopLinks}>
+          <NavLink to="/" end className={navLinkClass}>
+            <GoHome size={15} /> Home
+          </NavLink>
+          <NavLink to="/resume" className={navLinkClass}>
+            <GoBriefcase size={15} /> Resume
+          </NavLink>
+        </div>
+        <div className={styles.desktopSocial}>
+          <a href="https://github.com/mike-sabo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <FaGithub size={19} />
+          </a>
+          <a
+            href="https://linkedin.com/in/michaelasabo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin size={19} />
+          </a>
+          <a href="mailto:michael.a.sabo@gmail.com" aria-label="Email">
+            <GoMail size={19} />
+          </a>
+        </div>
+      </div>
+
+      {/* ── Mobile hamburger + sidenav (<768px) ────────── */}
+      <button className={styles.hamburger} onClick={() => setIsOpen(true)} aria-label="Open menu">
         <span className={styles.bar} />
         <span className={styles.bar} />
         <span className={styles.bar} />
       </button>
 
-      {isOpen && (
-        <div className={styles.overlay} onClick={() => setIsOpen(false)} />
-      )}
+      {isOpen && <div className={styles.overlay} onClick={close} />}
 
-      <div className={`${styles.sidenav} ${isOpen ? styles.sidenavOpen : ''}`}>
+      <div className={`${styles.sidenav} ${isOpen ? styles.sidenavOpen : ""}`}>
         <div className={styles.sidenavHeader}>
           <span className={styles.menuTitle}>Menu</span>
-          <button
-            className={styles.closebtn}
-            onClick={() => setIsOpen(false)}
-            aria-label="Close menu"
-          >
+          <button className={styles.closebtn} onClick={close} aria-label="Close menu">
             &times;
           </button>
         </div>
 
         <div className={styles.navLinks}>
-          <a href="#home"><GoHome size={20} /> Home</a>
-          <a href="#about"><GoPerson size={20} /> About</a>
-          <a href="#experience"><GoBriefcase size={20} /> Experience</a>
-          <a href="#projects"><GoCode size={20} /> Projects</a>
-          <a href="#contact"><GoMail size={20} /> Contact</a>
+          <NavLink to="/" end onClick={close}>
+            <GoHome size={20} /> Home
+          </NavLink>
+          <NavLink to="/resume" onClick={close}>
+            <GoBriefcase size={20} /> Resume
+          </NavLink>
         </div>
 
         <div className={styles.socialSection}>
@@ -50,7 +73,12 @@ function Nav() {
             <a href="https://github.com/mike-sabo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub size={22} />
             </a>
-            <a href="https://linkedin.com/in/michaelasabo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a
+              href="https://linkedin.com/in/michaelasabo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
               <FaLinkedin size={22} />
             </a>
             <a href="mailto:michael.a.sabo@gmail.com" aria-label="Email">
@@ -60,7 +88,7 @@ function Nav() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Nav
+export default Nav;

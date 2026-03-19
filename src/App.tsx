@@ -1,21 +1,29 @@
-import './App.css'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Experience from "./components/Experience/Experience";
 
-function App() {
-
+function Layout() {
   return (
     <>
       <Header />
-      <Hero
-        name="Mike Sabo"
-        avatarSrc="/web-app-manifest-512x512.png"
-        taglines={['Senior Developer', 'Problem Solver', 'Team Player']}
-      />
-      <main className="main">
-      </main>
+      <Outlet />
     </>
-  )
+  );
 }
 
-export default App
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="resume" element={<Experience />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
