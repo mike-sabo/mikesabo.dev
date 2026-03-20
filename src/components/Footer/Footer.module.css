@@ -1,0 +1,37 @@
+.footer {
+  padding: 2rem 1.5rem;
+  background-color: var(--chrome-bg);
+  border-top: 1px solid var(--chrome-line);
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link {
+  color: var(--chrome-fg);
+  display: flex;
+  align-items: center;
+  transition: text-decoration-color 0.2s;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.copy {
+  font-size: 0.78rem;
+  color: var(--chrome-fg);
+  margin: 0;
+}

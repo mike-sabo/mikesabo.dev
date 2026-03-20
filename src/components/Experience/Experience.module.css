@@ -1,6 +1,6 @@
 .experience {
   padding: 4rem 1.5rem;
-  background-color: #f4f5fb;
+  background-color: var(--panel-bg);
 }
 
 .container {
@@ -11,7 +11,7 @@
 .heading {
   font-size: 2rem;
   font-weight: 700;
-  color: #213547;
+  color: var(--text-1);
   margin: 0 0 2rem;
 }
 
@@ -22,10 +22,11 @@
 }
 
 .card {
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
   border-radius: 12px;
   padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(55, 53, 62, 0.08);
 }
 
 .cardHeader {
@@ -35,24 +36,40 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .jobTitle {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #213547;
+  color: var(--text-1);
   margin: 0 0 0.2rem;
 }
 
 .company {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.45rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background-color: var(--tag-bg);
   font-size: 0.9rem;
-  color: #3b5bdb;
+  color: var(--tag-text);
   font-weight: 500;
 }
 
 .period {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background-color: rgba(255, 255, 255, 0.08);
   font-size: 0.85rem;
-  color: #888;
+  color: var(--text-2);
+  font-weight: 600;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -67,7 +84,7 @@
 
 .bullets li {
   font-size: 0.95rem;
-  color: #444;
+  color: var(--text-2);
   line-height: 1.6;
 }
 
@@ -76,44 +93,33 @@
 }
 
 .educationCard {
-  background-color: #f9fafb;
-  border: 1px solid #e5e7eb;
+  background-color: var(--card-bg);
+  border: 1px solid var(--line);
   border-radius: 12px;
   padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(55, 53, 62, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {
-  .experience {
-    background-color: #111111;
+  .card,
+  .educationCard {
+    background-color: var(--chrome-bg);
+    border-color: rgba(211, 218, 217, 0.14);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
   }
 
-  .heading {
-    color: rgba(255, 255, 255, 0.87);
-  }
-
-  .card {
-    background-color: #1e1e1e;
-    border-color: #2e2e2e;
-  }
-
-  .jobTitle {
-    color: rgba(255, 255, 255, 0.87);
+  .cardHeader {
+    border-bottom-color: rgba(211, 218, 217, 0.12);
   }
 
   .company {
-    color: #818cf8;
+    background-color: rgba(113, 90, 90, 0.34);
+    border-color: rgba(211, 218, 217, 0.12);
   }
 
   .period {
-    color: #666;
-  }
-
-  .bullets li {
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .educationCard {
-    background-color: #161616;
-    border-color: #2a2a2a;
+    background-color: rgba(211, 218, 217, 0.08);
+    border-color: rgba(211, 218, 217, 0.12);
+    color: var(--text-1);
   }
 }

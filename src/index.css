@@ -2,10 +2,48 @@
   font-family: 'Open Sans', system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  --light-1: #81a6c6;
+  --light-2: #aacddc;
+  --light-3: #f3e3d0;
+  --light-4: #d2c4b4;
+
+  --dark-1: #37353e;
+  --dark-2: #44444e;
+  --dark-3: #715a5a;
+  --dark-4: #d3dad9;
+
+  /* Helper tones used only where strict palette values miss AA targets. */
+  --helper-link: #2e4f6b;
+  --helper-ink: #191a21;
+
+  /* Light theme: top-to-bottom prominence follows swatch order. */
+  --chrome-bg: var(--light-1);
+  --chrome-fg: var(--helper-ink);
+  --chrome-hover-bg: rgba(243, 227, 208, 0.36);
+  --chrome-active-bg: rgba(243, 227, 208, 0.52);
+  --chrome-line: rgba(25, 26, 33, 0.22);
+
+  --page-bg: var(--light-3);
+  --panel-bg: var(--light-4);
+  --surface-bg: var(--light-2);
+  --card-bg: var(--light-3);
+
+  --text-1: var(--dark-1);
+  --text-2: var(--dark-2);
+  --link: var(--helper-link);
+
+  --accent: var(--light-1);
+  --accent-weak: rgba(129, 166, 198, 0.22);
+  --tag-bg: rgba(129, 166, 198, 0.22);
+  --tag-text: var(--helper-link);
+
+  --line: rgba(55, 53, 62, 0.22);
+  --focus-ring: var(--helper-link);
+
+  color: var(--text-1);
+  background-color: var(--page-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,25 +51,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark theme: top-to-bottom prominence follows swatch order. */
+    --chrome-bg: var(--dark-1);
+    --chrome-fg: var(--dark-4);
+    --chrome-hover-bg: rgba(211, 218, 217, 0.12);
+    --chrome-active-bg: rgba(211, 218, 217, 0.2);
+    --chrome-line: rgba(211, 218, 217, 0.2);
+
+    --page-bg: var(--dark-2);
+    --panel-bg: var(--dark-2);
+    --surface-bg: var(--dark-3);
+    --card-bg: #4a4852;
+
+    --text-1: var(--dark-4);
+    --text-2: #bec6c5;
+    --link: var(--dark-4);
+
+    --accent: var(--dark-3);
+    --accent-weak: rgba(113, 90, 90, 0.34);
+    --tag-bg: rgba(113, 90, 90, 0.42);
+    --tag-text: var(--dark-4);
+
+    --line: rgba(211, 218, 217, 0.24);
+    --focus-ring: var(--dark-4);
+  }
+}
+
 a {
-  font-weight: 500;
-  color: #646cff;
+  color: inherit;
   text-decoration: inherit;
 }
 
-a:hover {
-  color: #535bf2;
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+body {
+  margin: 0;
+  background-color: var(--page-bg);
+  color: var(--text-1);
 }

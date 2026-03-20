@@ -1,40 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.75rem 1.5rem;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
 .headerWrap {
-    border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--chrome-line);
+  background-color: var(--chrome-bg);
 }
 
-.headerLogo {
-    width: auto;
-    max-width: 100%;
-    border-radius: 50%;
-    height: 4.6875rem;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .headerText {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.85rem;
-    text-decoration: none;
-    color: inherit;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--chrome-fg);
+  transition: text-decoration-color 0.2s;
 }
 
-@media (min-width: 48rem) {
-    .headerLogo {
-        height: 6.25rem;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .headerWrap {
-        border-bottom-color: #333;
-    }
+.headerText:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

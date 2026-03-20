@@ -6,7 +6,7 @@
   text-align: center;
   padding: 5rem 1.5rem;
   min-height: 60vh;
-  background-color: #e8eaf6;
+  background-color: var(--page-bg);
 }
 
 .avatar {
@@ -15,18 +15,18 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .heading {
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
-  color: #213547;
+  color: var(--text-1);
 }
 
 .name {
-  color: #3b5bdb;
+  color: var(--link);
 }
 
 .tagline {
@@ -41,11 +41,11 @@
 .tagline span {
   display: block;
   padding: 0.4rem 1.2rem;
-  border: 1px solid rgba(59, 91, 219, 0.3);
+  border: 1px solid var(--line);
   border-radius: 999px;
   font-size: 0.9rem;
-  color: #3b5bdb;
-  background-color: rgba(59, 91, 219, 0.08);
+  color: var(--tag-text);
+  background-color: var(--tag-bg);
 }
 
 @media (min-width: 36rem) {
@@ -70,22 +70,3 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .hero {
-    background-color: #1e1e2e;
-  }
-
-  .heading {
-    color: rgba(255, 255, 255, 0.87);
-  }
-
-  .name {
-    color: #748ffc;
-  }
-
-  .tagline span {
-    color: #748ffc;
-    border-color: rgba(116, 143, 252, 0.3);
-    background-color: rgba(116, 143, 252, 0.1);
-  }
-}

@@ -1,6 +1,6 @@
 .about {
   padding: 4rem 1.5rem;
-  background-color: #ffffff;
+  background-color: var(--panel-bg);
 }
 
 
@@ -12,14 +12,14 @@
 .heading {
   font-size: 2rem;
   font-weight: 700;
-  color: #213547;
+  color: var(--text-1);
   margin: 0 0 1.5rem;
 }
 
 .bio {
   font-size: 1.05rem;
   line-height: 1.8;
-  color: #444;
+  color: var(--text-2);
   margin: 0 0 2rem;
 }
 
@@ -32,9 +32,9 @@
 .skill {
   padding: 0.35rem 1rem;
   border-radius: 999px;
-  border: 1px solid rgba(59, 91, 219, 0.3);
-  background-color: rgba(59, 91, 219, 0.07);
-  color: #3b5bdb;
+  border: 1px solid var(--line);
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
   font-size: 0.875rem;
   font-weight: 500;
 }
@@ -46,24 +46,3 @@
   object-fit: cover;
   margin-bottom: 1.5rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  .about {
-    background-color: #1c1c1e;
-  }
-
-  .heading {
-    color: rgba(255, 255, 255, 0.87);
-  }
-
-  .bio {
-    color: rgba(255, 255, 255, 0.65);
-  }
-
-  .skill {
-    border-color: rgba(100, 130, 255, 0.35);
-    background-color: rgba(100, 130, 255, 0.1);
-    color: #818cf8;
-  }
-}
-
