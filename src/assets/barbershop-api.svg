@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img"
+    aria-labelledby="title desc">
+    <title id="title">barbershop-api harmony project preview</title>
+    <desc id="desc">Stylized screenshot preview for a C# API focused on barbershop harmony champions
+        data.</desc>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0f172a" />
+            <stop offset="100%" stop-color="#1e293b" />
+        </linearGradient>
+        <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#0ea5e9" />
+            <stop offset="100%" stop-color="#14b8a6" />
+        </linearGradient>
+    </defs>
+    <rect width="1200" height="760" fill="url(#bg)" />
+    <rect x="140" y="74" width="920" height="610" rx="14" fill="#0b1220" stroke="#334155"
+        stroke-width="2" />
+    <rect x="140" y="74" width="920" height="56" rx="14" fill="url(#header)" />
+    <circle cx="174" cy="102" r="7" fill="#0b1220" opacity="0.8" />
+    <circle cx="198" cy="102" r="7" fill="#0b1220" opacity="0.6" />
+    <circle cx="222" cy="102" r="7" fill="#0b1220" opacity="0.45" />
+    <text x="600" y="109" text-anchor="middle" fill="#e2e8f0" font-size="22"
+        font-family="Menlo, Monaco, Consolas, monospace">barbershop-api</text>
+    <text x="174" y="168" fill="#cbd5e1" font-size="18"
+        font-family="Menlo, Monaco, Consolas, monospace">GET Routes</text>
+    <rect x="174" y="184" width="852" height="44" rx="7" fill="#0b1220" stroke="#1f2937" />
+    <text x="194" y="211" fill="#22d3ee" font-size="15"
+        font-family="Menlo, Monaco, Consolas, monospace">GET</text>
+    <text x="252" y="211" fill="#e2e8f0" font-size="14"
+        font-family="Menlo, Monaco, Consolas, monospace">/barbershop/contest-years</text>
+    <rect x="174" y="238" width="852" height="44" rx="7" fill="#0b1220" stroke="#1f2937" />
+    <text x="194" y="265" fill="#22d3ee" font-size="15"
+        font-family="Menlo, Monaco, Consolas, monospace">GET</text>
+    <text x="252" y="265" fill="#e2e8f0" font-size="14"
+        font-family="Menlo, Monaco, Consolas, monospace">/barbershop/international/choruses</text>
+    <rect x="174" y="292" width="852" height="44" rx="7" fill="#0b1220" stroke="#1f2937" />
+    <text x="194" y="319" fill="#22d3ee" font-size="15"
+        font-family="Menlo, Monaco, Consolas, monospace">GET</text>
+    <text x="252" y="319" fill="#e2e8f0" font-size="14"
+        font-family="Menlo, Monaco, Consolas, monospace">
+        /barbershop/international/quartets?year=1992</text>
+    <rect x="174" y="346" width="852" height="44" rx="7" fill="#0b1220" stroke="#1f2937" />
+    <text x="194" y="373" fill="#22d3ee" font-size="15"
+        font-family="Menlo, Monaco, Consolas, monospace">GET</text>
+    <text x="252" y="373" fill="#e2e8f0" font-size="13"
+        font-family="Menlo, Monaco, Consolas, monospace">
+        /barbershop/district/choruses?year=2024&amp;district=SWD</text>
+    <rect x="174" y="400" width="852" height="44" rx="7" fill="#0b1220" stroke="#1f2937" />
+    <text x="194" y="427" fill="#22d3ee" font-size="15"
+        font-family="Menlo, Monaco, Consolas, monospace">GET</text>
+    <text x="252" y="427" fill="#e2e8f0" font-size="13"
+        font-family="Menlo, Monaco, Consolas, monospace">/barbershop/district/quartets?district=JAD</text>
+    <rect x="174" y="482" width="852" height="96" rx="10" fill="#111827" stroke="#334155" />
+    <text x="196" y="514" fill="#cbd5e1" font-size="16"
+        font-family="Menlo, Monaco, Consolas, monospace">Sample Result</text>
+    <text x="196" y="545" fill="#67e8f9" font-size="14"
+        font-family="Menlo, Monaco, Consolas, monospace">{ "year": 1992, "quartetName": "The Gas
+        House Gang", "district": "CSD" }</text>
+</svg>

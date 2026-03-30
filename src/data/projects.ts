@@ -1,4 +1,5 @@
 import recipesImg from '../assets/recipes.jpg'
+import barbershopApiImg from '../assets/barbershop-api.svg'
 
 export interface Project {
     id: string
@@ -11,6 +12,16 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+        id: 'barbershop-api',
+        title: 'barbershop-api',
+        description:
+            'An example API project that serves as a database of past barbershop harmony champions, with structured data for both quartet and chorus winners across years.',
+        stack: ['C#', 'ASP.NET Core Web API', 'SQLite', 'Dapper', 'OpenAPI'],
+        url: 'https://github.com/mike-sabo/barbershop-api',
+        github: 'https://github.com/mike-sabo/barbershop-api',
+        image: barbershopApiImg,
+    },
     {
         id: 'recipes',
         title: 'Recipes',
