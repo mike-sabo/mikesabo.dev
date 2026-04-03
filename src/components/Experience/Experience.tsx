@@ -7,12 +7,12 @@ const jobs = [
     location: "Cleveland, OH",
     period: "2018 – Present",
     bullets: [
-      "Design and build reusable AEM components and modern frontend solutions using Java, HTL, React, and TypeScript, enabling consistent, scalable implementations across multiple brand websites.",
-      "Design and implement a multi-brand (white-label) theming architecture enabling shared components to support distinct brand identities without code duplication.",
-      "Deliver WCAG 2.1-compliant interfaces using semantic HTML, ARIA patterns, and automated accessibility testing, supporting compliance across all digital properties.",
-      "Establish and enforce frontend engineering standards including code review guidelines, linting configurations, and documentation; mentor 5+ internal and vendor developers.",
-      "Train and mentor engineers on effective use of GitHub Copilot and prompt engineering techniques; incorporate these tools into test-driven development (TDD) workflows to accelerate delivery and improve code quality and test coverage.",
-      "Maintain and evolve CI/CD pipelines using GitHub Actions, automating builds, tests, and deployments to improve release reliability and team velocity.",
+      "Build reusable AEM and React components using Java/Spring, HTL (HTML Template Language), TypeScript, JavaScript, SCSS, and CSS.",
+      "Designed and implemented a whitelabel AEM site generation architecture that shares components while allowing custom themes and styling.",
+      "Establish and maintain coding standards including code reviews, formatting/linting configurations, and documentation.",
+      "Assist team members with troubleshooting, implementation, and completing sprint goals/tasks.",
+      "Mentor team members on the effective use of GitHub Copilot and prompt engineering to support test-driven development (TDD), improve code quality, and streamline everyday tasks.",
+      "Help build and maintain CI/CD pipelines using GitHub Actions, automating builds and generation of new projects.",
     ],
   },
   {
@@ -21,9 +21,9 @@ const jobs = [
     location: "Cleveland, OH",
     period: "2016 – 2018",
     bullets: [
-      "Built and maintained responsive ticketing platform interfaces using React, JavaScript, HTML, and CSS, serving sports and entertainment venues.",
-      "Collaborated with UX designers to deliver accessible, mobile-first features improving usability across devices.",
-      "Supported frontend build pipelines and CI/CD processes, improving release reliability for production deployments.",
+      "Built and maintained ticketing software for sports, music, and entertainment using ASP.NET, HTML, CSS, JavaScript, React, and C# Web API.",
+      "Managed database updates and versioning with Liquibase, supporting Oracle and SQL Server.",
+      "Enhanced the BackOffice Windows Forms app for event creation and setup.",
     ],
   },
   {
@@ -32,9 +32,10 @@ const jobs = [
     location: "Willoughby, OH",
     period: "2014 – 2016",
     bullets: [
-      "Built PCRCapture, a Chrome extension with a custom UI enabling recruiters to capture and sync candidate data via REST APIs.",
-      "Developed hybrid mobile app interfaces for Android and iOS using Cordova, improving cross-platform feature parity.",
-      "Refactored and optimized the PCRecruiter web application frontend to improve performance and reduce complexity.",
+      "Developed API integrations for the PCRecruiter web app using VB.NET and C#.",
+      "Built PCRCapture, a Chrome extension for data scraping and REST API integration with client databases.",
+      "Contributed to the PCRecruiter hybrid mobile app for Android and iOS using Cordova and Handlebars.js.",
+      "Maintained code using TFS.",
     ],
   },
   {
@@ -43,7 +44,11 @@ const jobs = [
     location: "Concord Township, OH",
     period: "2004 – 2014",
     bullets: [
-      "Deployed and supported enterprise software systems in hospital environments; authored technical documentation and automation scripts.",
+      "Installed and maintained digital dictation and transcription servers in hospital environments.",
+      "Provided on-site live training and support for system adoption.",
+      "Provided technical support and troubleshooting complex issues for dealers and end users.",
+      "Performed software testing, wrote technical documentation, and customized scripts for client workflows.",
+      "Configured HL7 interfaces for integration with hospital EHR systems.",
     ],
   },
 ];
