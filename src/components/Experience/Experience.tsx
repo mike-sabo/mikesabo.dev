@@ -2,7 +2,7 @@ import styles from "./Experience.module.css";
 
 const jobs = [
   {
-    title: "Senior Frontend Engineer",
+    title: "Senior Full Stack Engineer",
     company: "Sherwin-Williams",
     location: "Cleveland, OH",
     period: "2018 – Present",
