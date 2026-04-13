@@ -27,28 +27,26 @@ function Home() {
           <h2 className={styles.heading}>About Me</h2>
           <img src={profileSvg} alt="Michael Sabo" className={styles.profileImage} />
           <p className={styles.bio}>
-            I’m a Senior Full Stack Developer with a strong focus on frontend engineering, currently working at
-            Sherwin-Williams. Over the past several years, I’ve specialized in building scalable, component-driven web
-            applications—particularly within Adobe Experience Manager (AEM)—while also contributing to modern frontend
-            experiences using technologies like React and TypeScript.
+            I'm a Senior Full Stack Engineer at Sherwin-Williams, where I've been since 2018. Most of my day-to-day
+            involves building reusable components in AEM using Java, HTL, TypeScript, and SCSS — but I also work
+            heavily with React and have a strong frontend focus overall.
           </p>
 
           <p className={styles.bio}>
-            My work sits at the intersection of engineering and usability. I enjoy designing clean, maintainable
-            component architectures and creating intuitive user interfaces that solve real business problems. Along the
-            way, I’ve mentored other developers, helped improve team workflows, and explored ways to integrate emerging
-            tools like AI-assisted development into everyday engineering practices.
+            I care a lot about writing code that's easy to maintain and easy for other developers to pick up. I do a
+            good amount of mentoring on my team, whether that's helping folks with implementation problems, doing code
+            reviews, or showing people how to actually use tools like GitHub Copilot in a way that improves their work.
+            I also help build out our CI/CD pipelines with GitHub Actions.
           </p>
           <p className={styles.bio}>
-            Before my current role, I built a broad technical foundation across multiple industries, working with .NET,
-            JavaScript frameworks, and even developing Chrome extensions and hybrid mobile apps. That range of
-            experience still shapes how I approach problems today—practically, creatively, and with an eye toward
-            long-term maintainability.
+            I didn't start out in development — I spent about ten years doing systems analyst and technical support
+            work in hospital environments before making the switch. After getting my degree, I worked on ticketing
+            software, Chrome extensions, and hybrid mobile apps before landing where I am now. That background gives me
+            a practical mindset — I like to understand the full picture, not just the code.
           </p>
           <p className={styles.bio}>
-            Outside of work, I enjoy building personal projects, exploring new technologies, and creating tools that
-            make everyday tasks easier. I also spend time woodworking and tinkering in my shop, and I’m a big fan of
-            barbershop harmony. I value time spent with family and community.
+            When I'm not coding, I'm usually woodworking in my shop, singing barbershop harmony, or spending time with
+            my family. I also like to tinker with personal projects and try out new tech whenever I can.
           </p>
           <div className={styles.skills}>
             {skills.map((skill) => (
