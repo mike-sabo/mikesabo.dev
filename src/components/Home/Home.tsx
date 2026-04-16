@@ -28,8 +28,8 @@ function Home() {
           <img src={profileSvg} alt="Michael Sabo" className={styles.profileImage} />
           <p className={styles.bio}>
             I'm a Senior Full Stack Engineer at Sherwin-Williams, where I've been since 2018. Most of my day-to-day
-            involves building reusable components in AEM using Java, HTL, TypeScript, and SCSS — but I also work
-            heavily with React and have a strong frontend focus overall.
+            involves building reusable components in AEM using Java, HTL, TypeScript, and SCSS — but I also work heavily
+            with React and have a strong frontend focus overall.
           </p>
 
           <p className={styles.bio}>
@@ -39,10 +39,10 @@ function Home() {
             I also help build out our CI/CD pipelines with GitHub Actions.
           </p>
           <p className={styles.bio}>
-            I didn't start out in development — I spent about ten years doing systems analyst and technical support
-            work in hospital environments before making the switch. After getting my degree, I worked on ticketing
-            software, Chrome extensions, and hybrid mobile apps before landing where I am now. That background gives me
-            a practical mindset — I like to understand the full picture, not just the code.
+            I didn't start out in development — I spent about ten years doing systems analyst and technical support work
+            in hospital environments before making the switch. After getting my degree, I worked on ticketing software,
+            Chrome extensions, and hybrid mobile apps before landing where I am now. That background gives me a
+            practical mindset — I like to understand the full picture, not just the code.
           </p>
           <p className={styles.bio}>
             When I'm not coding, I'm usually woodworking in my shop, singing barbershop harmony, or spending time with

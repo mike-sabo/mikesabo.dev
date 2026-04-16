@@ -7,12 +7,12 @@ const jobs = [
     location: "Cleveland, OH",
     period: "2018 – Present",
     bullets: [
-      "Build reusable AEM and React components using Java/Spring, HTL (HTML Template Language), TypeScript, JavaScript, SCSS, and CSS.",
-      "Designed and implemented a whitelabel AEM site generation architecture that shares components while allowing custom themes and styling.",
-      "Establish and maintain coding standards including code reviews, formatting/linting configurations, and documentation.",
-      "Assist team members with troubleshooting, implementation, and completing sprint goals/tasks.",
-      "Mentor team members on the effective use of GitHub Copilot and prompt engineering to support test-driven development (TDD), improve code quality, and streamline everyday tasks.",
-      "Help build and maintain CI/CD pipelines using GitHub Actions, automating builds and generation of new projects.",
+      "Build reusable AEM and React components across both the frontend and backend using Java, Spring, OSGi services, Servlets, HTL/Sightly, TypeScript, JavaScript, SCSS, and CSS.",
+      "Design and implement a white-label AEM site architecture that reuses shared components while supporting custom themes and styling across brands.",
+      "Establish and maintain coding standards through code reviews, formatting and linting configuration, and documentation.",
+      "Support team members with troubleshooting, implementation, and sprint delivery.",
+      "Mentor team members on using GitHub Copilot effectively, helping the team adopt more test-driven workflows, improve code quality, and streamline day-to-day work.",
+      "Build and maintain CI/CD pipelines with GitHub Actions to automate builds and project setup.",
     ],
   },
   {
@@ -66,7 +66,7 @@ function Experience() {
   return (
     <section id="experience" className={styles.experience}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>Resume</h2>
+        <h2 className={styles.heading}>Professional Experience</h2>
         <div className={styles.timeline}>
           {jobs.map((job) => (
             <div key={`${job.company}-${job.title}`} className={styles.card}>
